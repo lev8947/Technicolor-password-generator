@@ -8,6 +8,7 @@ const inputUppercase = document.getElementById("input-uppercase");
 const inputSymbols = document.getElementById("input-symbols");
 const inputNumbers = document.getElementById("input-numbers");
 const textareaPassword = document.getElementById("password");
+const error = document.getElementById("error");
 
 setPasswordLengthSpan();
 
@@ -56,8 +57,14 @@ const wantsNumbers = inputNumbers.checked;
 
 
 //in my password
+error.textContent = "";
 
 
+if(!wantsLowercase && !wantsUppercase && !wantsNumbers && !wantsSymbols){
+  //throw error
+error.textContent = "Make a selection you peanut ☺"
+return;
+}
 //Once I have selected all the options
 
 if(wantsLowercase){
