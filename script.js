@@ -1,8 +1,13 @@
 // Assignment Code
 
 const generateBtn = document.querySelector("#generate");
-const inputPasswordLength = document.getElementById("input-length");
 const spanPasswordLength = document.getElementById("span-length-display");
+const inputPasswordLength = document.getElementById("input-length");
+const inputLowercase = document.getElementById("input-lowercase");
+const inputUppercase = document.getElementById("input-uppercase");
+const inputSymbols = document.getElementById("input-symbols");
+const inputNumbers = document.getElementById("input-numbers");
+
 
 setPasswordLengthSpan();
 
@@ -24,24 +29,37 @@ setPasswordLengthSpan();
 // When I click on the generate button
 generateBtn.addEventListener('click', function(event){
 
-//The app will ask my password length 
+  console.log(event);
 
-//It will ask if I want to use:
+//The app will ask my password length 
+  const passwordLength = Number (inputPasswordLength.value);
+  console.log(passwordLength);
+
+//It will ask if I want to use (done in html): 
 
 // lowercase
-
+const wantsLowercase = inputLowercase.checked;
 // uppercase
-
+const wantsUppercase = inputUppercase.checked;
 // symbols
-
+const wantsSymbols = inputSymbols.checked;
 // numbers
+const wantsNumbers = inputNumbers.checked;
+
+console.log(wantsLowercase, wantsUppercase, wantsSymbols, wantsNumbers);
+
+
+
+
+
+
 
 //in my password
 
 
 //Once I have selected all the options
 
-//Then the app should generate a password
+//Then the app should generate a password based on options
 
 //Then show the generated password in text area
 
