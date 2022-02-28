@@ -7,7 +7,7 @@ const inputLowercase = document.getElementById("input-lowercase");
 const inputUppercase = document.getElementById("input-uppercase");
 const inputSymbols = document.getElementById("input-symbols");
 const inputNumbers = document.getElementById("input-numbers");
-
+const textareaPassword = document.getElementById("password");
 
 setPasswordLengthSpan();
 
@@ -89,5 +89,5 @@ const randomChar = charset[randomIndex];
 
 
 //Then show the generated password in text area
-
+textareaPassword.textContent = password;
 })
