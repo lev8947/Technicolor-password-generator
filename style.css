@@ -15,6 +15,8 @@ body,
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
+  background-image: url(../Technicolor-password-generator/futureland.jpeg);
+  background-size: cover;
 }
 
 .wrapper {
@@ -27,26 +29,29 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: #FE4A49;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: underline;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: black;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #FE4A49;
   height: 2px;
 }
 
@@ -62,7 +67,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #FE4A49;
   height: 2px;
 }
 
@@ -74,11 +79,11 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #311C79;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: #FE4A49;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -86,6 +91,7 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
 }
 
 button[disabled] {
@@ -137,5 +143,5 @@ button[disabled] {
 }
 
 #error {
-  color: red;
+  color: #73ff00;
 }
