@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,10 +15,11 @@
       <header>
         <h1>Password Generator</h1>
       </header>
-      <div class="card">
+       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+
         <div class="card-body">
           <textarea
             readonly
@@ -27,6 +28,7 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+
         <form>
           <label for="input-length">Password Length</label>
           <div>
@@ -34,12 +36,12 @@
           <span id="span-length-display"></span>
           </div>
           <div>
-          <input type="checkbox" id="input-lowercase" checked />
-          <label for="input-lowercase">lowercase</label>
+          <input type="checkbox" id="input-lcase" checked />
+          <label for="input-lcase">lowercase</label>
           </div>
           <div>
-          <input type="checkbox" id="input-uppercase" />
-          <label for="input-uppercase">uppercase</label>
+          <input type="checkbox" id="input-ucase" />
+          <label for="input-ucase">uppercase</label>
           </div>
           <div>
           <input type="checkbox" id="input-symbols" />
